@@ -7,11 +7,8 @@ const StudentSchema = new Schema({
     Gender: {
         type: String
     },
-    Age: {
-        type: Number
-    },
     Class: {
-        type: Number
+        type: String
     },
     Section: {
         type: String
