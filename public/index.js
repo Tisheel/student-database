@@ -81,7 +81,7 @@ addStudentBtn.addEventListener('click', () => {
     axios.post('/api/student', { Name, Class, Section, Gender })
         .then(res => {
             if (res.status === 200) {
-                displayStudent()
+                location.reload()
             }
         })
         .catch(error => {
@@ -98,7 +98,7 @@ function deleteStudent(Name) {
         .then(res => {
             if (res.status === 200) {
                 alert(res.data.message)
-                displayStudent()
+                location.reload()
             }
         })
         .catch(error => {
@@ -147,7 +147,7 @@ function updateStudent(Name, Class, Section, Gender) {
             .then(res => {
                 if (res.status === 200) {
                     alert('Student updated.')
-                    displayStudent()
+                    location.reload()
                 }
             })
             .catch(error => {
