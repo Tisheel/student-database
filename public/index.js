@@ -50,7 +50,7 @@ searchName.addEventListener('change', (e) => {
                         <th>
                         <button type="button" class="btn btn-danger" onclick="deleteStudent('${item.Name}')">Delete</button>
                         <button type="button" class="btn btn-warning" onclick="updateStudent('${item.Name}','${item.Class}','${item.Section}','${item.Gender}')" data-bs-toggle="modal" data-bs-target="#UpdateModal">Update</button>
-                    </th>
+                        </th>
                     </tr>
                 `
                 })
